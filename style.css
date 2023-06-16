@@ -1,0 +1,44 @@
+  /* Resetando a página */
+*{
+    margin: 0;
+    padding: 0;
+}
+   /* Definindo o fundo, posição dos itens e altura */ 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+  }
+  /* Definindo fundo, largura, altura e a posição do design */
+  .container {
+        background: #0b2429;
+        width: 400px;
+        height: 300px;
+        position: relative;
+  }
+
+  /* Fazendo as formas da imagem */
+  .container * {
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    border-radius: var(--l, 0%) 50%;
+    top: 46.25%;
+    left: 50%;
+    background: #0b2429;
+  } 
+  /* Definindo a distãncia das bordas e o fundo */
+  .container u {
+    padding: 100px;
+    background: #998235;
+  }
+  /* Definindo o meio do olho e sua forma circular */
+  .container i {
+    padding: 70px;
+    background: radial-gradient(#0b2429 25px, #f3ac3c 0);
+    --l: 50%;
+    border: 20px solid #0b2429;
+  }
